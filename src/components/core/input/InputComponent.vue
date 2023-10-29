@@ -7,7 +7,7 @@ defineProps<InputProps>()
 <template>
   <input
     :type="type ?? 'text'"
-    class="input"
+    :class="['input', inputClass]"
     :placeholder="placeholder"
     :value="modelValue"
     @input="$emit('update:modelValue', ($event.target as HTMLInputElement)?.value)"

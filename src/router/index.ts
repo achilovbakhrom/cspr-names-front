@@ -17,7 +17,7 @@ const router = createRouter({
         {
           path: '',
           name: 'app-main',
-          component: () => import('@/modules/test/TestComponent.vue')
+          component: () => import('@/modules/app/components/TheNamesContent.vue')
         }
       ]
     },
