@@ -1,0 +1,20 @@
+.right-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+.right-items a {
+  text-decoration: none;
+  font-family: $font-medium;
+  color: white;
+}
+
+.right-items a:hover {
+  color: $color-primary;
+}
+
+.right-items [role='button'] {
+  cursor: pointer;
+}

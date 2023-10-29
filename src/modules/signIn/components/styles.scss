@@ -1,0 +1,60 @@
+.root {
+  @extend .centered;
+  height: 100vh;
+  background-color: #eee;
+}
+
+.form {
+  @extend .centered;
+  padding: 32px 0 50px 0;
+  width: 30%;
+  border-radius: 20px;
+  background-color: white;
+  flex-flow: column;
+  gap: 15px;
+  -webkit-box-shadow: -1px 2px 16px 1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -1px 2px 16px 1px rgba(34, 60, 80, 0.2);
+  box-shadow: -1px 2px 16px 1px rgba(34, 60, 80, 0.2);
+  min-width: 300px;
+}
+
+.form__title {
+  font-family: $font-bold;
+  color: #555;
+}
+
+.form__input {
+  font-size: 1.3rem;
+  width: 100%;
+}
+.form__input::placeholder {
+  font-size: 0.9rem;
+}
+
+.form__button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.root:deep(.formkit-input) {
+  @extend .form__input;
+}
+
+.root:deep(.formkit-label) {
+  color: #888;
+}
+
+.root:deep(.formkit-message) {
+  color: red;
+}
+.root:deep(.formkit-outer) {
+  width: 100%;
+}
+
+.root:deep(.formkit-form) {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 8px;
+  width: 65%;
+}

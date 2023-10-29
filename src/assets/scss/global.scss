@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'fonts';
+
+body {
+  background-color: white;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

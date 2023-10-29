@@ -1,0 +1,49 @@
+.welcome {
+  @extend .centered;
+  background-color: $color-primary;
+  display: flex;
+  font-family: $font-black;
+  font-size: 2rem;
+  color: white;
+  height: 300px;
+}
+
+.header {
+  background-color: $color-tertiary;
+  font-family: $font-medium;
+  font-size: 1.4rem;
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__title {
+  flex: 1;
+  padding-left: 25px;
+  font-family: $font-medium;
+  color: white;
+}
+
+.header__right-items {
+  margin-right: 20px;
+}
+
+.header__logo {
+  margin-left: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: $font-black;
+}
+
+.header__right-items a {
+  padding: 8px 12px;
+  background-color: $color-primary;
+  color: gray;
+  text-decoration: none;
+  color: white;
+  font-family: $font-regular;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+}
